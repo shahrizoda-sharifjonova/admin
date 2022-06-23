@@ -1,6 +1,14 @@
 const openDrodpwn = document.querySelector('.open-dropdown');
-const dropdownContent = document.querySelector('.cabinet__dropdown-content');
+const cabinetdropdownContent = document.querySelector('.cabinet__dropdown-content');
 
 openDrodpwn.addEventListener('click' , (e)=>{
-    dropdownContent.classList.toggle('active')
+    cabinetdropdownContent.classList.toggle('active')
 })
+
+const dropdownBtn = document.querySelectorAll('.dropdown__button');
+
+dropdownBtn.forEach(el => {
+    el.addEventListener('click' , (e)=>{
+        el.classList.toggle('active')
+    })
+});
