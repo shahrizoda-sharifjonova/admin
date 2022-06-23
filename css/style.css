@@ -170,6 +170,10 @@ button{
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: 300ms ease;
+}
+.cabinet__col-add:hover{
+    background: #186ce0;
 }
 .cabinet__col-btn{
     font-weight: 400;
@@ -182,8 +186,91 @@ button{
     width: 100%;
     text-align: left;
     padding: 7px 10px;
+    transition: 500ms ease;
 }
-.cabinet__checkbox:nth-of-type(1){
+.cabinet__col-btn:hover{
+    background: #dadada;
+}
+.cabinet__checkbox{
     margin-bottom: 30px;
+    position: relative;
 }
+.cabinet__checkbox::before{
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background: #FF0716;
+    border-radius: 50%;
+    top: 50%;
+    left: 55px;
+}
+input[type=checkbox] + label {
+    display: block;
+    cursor: pointer;
+    padding: 3px;
+}
+input[type=checkbox] {
+    display: none;
+}
+input[type=checkbox] + label:before {
+    content: "\2714";
+    background: #FFFFFF;
+    border: 1px solid #B8B8B8;
+    border-radius: 3px;
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    margin-right: 12px;
+    vertical-align: bottom;
+    color: transparent;
+    transition: 300ms ease;
+}
+input[type=checkbox] + label:active:before {
+    transform: scale(0);
+}
+input[type=checkbox]:checked + label:before {
+    background: #FFFFFF;
+    border: 1px solid #1F1F1F;
+    border-radius: 3px;
+    background: url(../img/checkbox-tick.svg) center / cover no-repeat;
+    top: 3px;
+    left: 3px;
+}
+input[type=checkbox]:disabled + label:before {
+    transform: scale(1);
+}
+.cabinet__checkbox label{
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 13px;
+    color: #1F1F1F;
+}
+.cabinet__checkbox label .checkbox-icon-1{
+    margin-right: 24px;
+}
+.cabinet__checkbox label .checkbox-icon-2{
+    margin-left: 14px;
+    margin-right: 11px;
+}
+.cabinet__title{
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 13px;
+    color: #969696;
+}
+.cabinet__status{
+    display: flex;
+    align-items: center;
+}
+.cabinet__status button{
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 11px;
+    color: #1F1F1F;
+    background: #FFFFFF;
+    border: 1px solid #DCDCDC;
+    border-radius: 3px;
+}
+
 
