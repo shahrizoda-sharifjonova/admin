@@ -450,6 +450,12 @@ input[type=checkbox]:disabled + label:before {
     width: 370px;
     position: fixed;
     bottom: 50px;
+    transition: 300ms ease;
+}
+.cabinet__fixed.hidden{
+    opacity: 0;
+    visibility: hidden;
+    bottom: 0;
 }
 .cabinet__fixed-p{
     font-weight: 700;
@@ -468,4 +474,5 @@ input[type=checkbox]:disabled + label:before {
     border: 1px solid #DCDCDC;
     border-radius: 3px;
     margin-right: 10px;
+    transition: 300ms ease;
 }
