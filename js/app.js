@@ -49,6 +49,7 @@ headerDropdownBtn.forEach(el => {
         dropdownClose.addEventListener('click', (e)=>{
             headerDropdownBtn.forEach(btn => {
                 btn.classList.remove('active')
+                dropdownClose.classList.remove('active')
             })
         })
     })

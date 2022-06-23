@@ -329,6 +329,7 @@ main{
     height: 5px;
     background: #FF0716;
     border-radius: 50%;
+    transform: translateY(-50%);
     top: 50%;
     left: 55px;
 }
