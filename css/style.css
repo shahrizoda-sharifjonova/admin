@@ -161,6 +161,9 @@ p{
     text-align: right;
     color: #969696;
 }
+.cabinet__body{
+    position: relative;
+}
 .cabinet__title{
     font-weight: 400;
     font-size: 20px;
@@ -479,6 +482,9 @@ p{
     line-height: 13px;
     color: #1F1F1F;
 }
+.cabinet__p-info{
+    min-width: 127px
+}
 .cabinet__p.cabinet__p_margin{
     margin-left: 50px;
     margin-right: 38px;
@@ -513,4 +519,83 @@ p{
 }
 .cabinet__copy button:hover{
     background: #dadada;
+}
+.cabinet__fixed{
+    background: #FFFFFF;
+    border: 1px solid #E8E8E8;
+    box-shadow: 0px 4px 13px rgba(151, 151, 151, 0.25);
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    bottom: 50px; 
+    transition: 500ms ease;
+    padding: 10px 15px 10px 20px;
+}
+.cabinet__fixed:hover{
+    bottom: 60px;
+}
+.cabinet__fixed.hidden{
+    bottom: 30px;
+    opacity: 0;
+    visibility: hidden;
+}
+.cabinet__fixed-p{
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 13px;
+    color: #1F1F1F;
+    margin-right: 27px;
+}
+.cabinet__fixed-btn{
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 13px;
+    color: #1F1F1F;   
+    background: #FFFFFF;
+    border: 1px solid #DCDCDC;
+    border-radius: 3px;
+    padding: 10px 15px;
+    margin-right: 10px;
+    transition: 300ms ease;
+}
+.cabinet__fixed-btn:hover{
+    background: #dadada;
+}
+.cabinet__fixed-close{
+    width: 18px;
+    height: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 0;
+}
+.cabinet__fixed-close img{
+    width: 100%;
+    height: 100%;
+    line-height: 0;
+}
+input[type="checkbox"] {
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: 0;
+    height: 16px;
+    width: 16px;
+    border: 1px solid white;
+    background: #FFFFFF;
+    border: 1px solid #B8B8B8;
+    border-radius: 3px;
+    width: 14px;
+    height: 14px;
+    transition: 100ms;
+}
+input[type="checkbox"]:checked {
+    border: 1px solid #1F1F1F;
+    border-radius: 3px;
+    background: url(../img/checkbox-tick.svg) center / contain no-repeat;
+    width: 14px;
+    height: 14px;
+    transform: scale(1.05);
 }
