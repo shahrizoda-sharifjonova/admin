@@ -4,279 +4,281 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
 <body>
-    <header>
-        <nav class="header__nav container">
-            <a href="index.html" class="logo">Все эксперты</a>
-            <ul class="header__list">
-                <div class="header__dropdown">
-                    <button type="button" class="header__dropdown-btn">Объекты <img src="img/cabinet-status-down.svg" alt=""></button>
-                    <div class="header__dropdown-content">
-                        <a href="#!" class="header__link">Объекты</a>
-                        <a href="#!" class="header__link">Объекты</a>
-                        <a href="#!" class="header__link">Объекты</a>
-                    </div>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-light container">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Все эксперты</a>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Объекты
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Объекты</a></li>
+                      <li><a class="dropdown-item" href="#">Объекты</a></li>
+                      <li><a class="dropdown-item" href="#">Объекты</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Организации
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Организации</a></li>
+                      <li><a class="dropdown-item" href="#">Организации</a></li>
+                      <li><a class="dropdown-item" href="#">Организации</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Биржа
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Биржа</a></li>
+                      <li><a class="dropdown-item" href="#">Биржа</a></li>
+                      <li><a class="dropdown-item" href="#">Биржа</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Профсообщество
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Профсообщество</a></li>
+                      <li><a class="dropdown-item" href="#">Профсообщество</a></li>
+                      <li><a class="dropdown-item" href="#">Профсообщество</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <div class="header__contacts">
+                    <a href="#!" class="header__call"><img src="img/header-icon-1.svg" alt=""></a>
+                    <a href="#!" class="header__username"><img src="img/header-user.svg" alt="">Иванова А.И.</a>
+                    <a href="#!" class="header__settings"><img src="img/header-settings.svg" alt=""></a>
+                    <button class="btn btn-outline-success" type="submit">Выйти</button>
                 </div>
-                <div class="header__dropdown">
-                    <button type="button" class="header__dropdown-btn">Организации <img src="img/cabinet-status-down.svg" alt=""></button>
-                    <div class="header__dropdown-content">
-                        <a href="#!" class="header__link">Организации</a>
-                        <a href="#!" class="header__link">Организации</a>
-                        <a href="#!" class="header__link">Организации</a>
-                    </div>
-                </div>
-                <div class="header__dropdown">
-                    <button type="button" class="header__dropdown-btn">Биржа <img src="img/cabinet-status-down.svg" alt=""></button>
-                    <div class="header__dropdown-content">
-                        <a href="#!" class="header__link">Биржа</a>
-                        <a href="#!" class="header__link">Биржа</a>
-                        <a href="#!" class="header__link">Биржа</a>
-                    </div>
-                </div>
-                <div class="header__dropdown">
-                    <button type="button" class="header__dropdown-btn">Профсообщество <img src="img/cabinet-status-down.svg" alt=""></button>
-                    <div class="header__dropdown-content">
-                        <a href="#!" class="header__link">Профсообщество</a>
-                        <a href="#!" class="header__link">Профсообщество</a>
-                        <a href="#!" class="header__link">Профсообщество</a>
-                    </div>
-                </div>
-            </ul>
-            <div class="header__content">
-                <a href="#!" class="header__call"><img src="img/header-icon-1.svg" alt=""></a>
-                <p class="header__username"><img src="img/header-user.svg" alt="">Иванова А.И.</p>
-                <a href="#!"><img src="img/header-settings.svg" alt=""></a>
-                <button type="button" class="header__btn">Выйти</button>
             </div>
-        </nav>
+          </nav>
     </header>
-    <main>
+    <main class="main">
+        <div class="progressBar container">
+            <div class="progress__top">
+                <p class="progress__subtitle">Место на диске</p>
+                <p class="progress__p">200 мб из 500 мб</p>
+            </div>
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+        </div>
         <section class="cabinet">
             <div class="cabinet__body container">
-                <div class="cabinet__absolute">
-                    <div class="cabinet__absolute-top">
-                        <p class="cabinet__absolute-title">Место на диске</p>
-                        <p class="cabinet__absolute-p">200 мб из 500 мб</p>
-                    </div>
-                    <div class="cabinet__absolute-progress">
-                        <div class="cabinet__absolute-track"></div>
-                    </div>
-                </div>
-                <div class="cabinet__fixed">
-                    <p class="cabinet__fixed-p">1 объект</p>
-                    <button type="button" class="cabinet__fixed-btn">В архив</button>
-                    <button type="button" class="cabinet__fixed-btn">Изменить статус</button>
-                    <button type="button" class="cabinet__fixed-close"><img src="img/cabinet-close.svg" alt=""></button>
-                </div>
-                <p class="cabinet__title">Личный кабинет</p>
-                <div class="cabinet__filter">
+                <h2 class="cabinet__title">Личный кабинет</h2>
+                <div class="cabinet__row">
                     <div class="cabinet__buttons">
-                        <button type="button" class="cabinet__button">Все</button>
-                        <button type="button" class="cabinet__button active">Без резолюции</button>
-                        <button type="button" class="cabinet__button">С резолюцией</button>
+                        <button type="button" class="cabinet__row-btn">Все</button>
+                        <button type="button" class="cabinet__row-btn active">Без резолюции</button>
+                        <button type="button" class="cabinet__row-btn">С резолюцией</button>
                     </div>
                     <div class="cabinet__buttons">
-                        <button type="button" class="cabinet__button active">По проекту</button>
-                        <button type="button" class="cabinet__button">По статусу</button>
-                        <div class="cabinet__dropdown">
-                            <button type="button" class="cabinet__button open-dropdown active">
-                                <img src="img/cabinet-dots.svg" alt="">
+                        <button type="button" class="cabinet__row-btn active">По проекту</button>
+                        <button type="button" class="cabinet__row-btn">По статусу</button>
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                              <img src="img/cabinet-dots.svg" alt="">
                             </button>
-                            <div class="cabinet__dropdown-content">
-                                <button type="button">По дедлайну</button>
-                                <button type="button">По автору</button>
-                                <button type="button">По приоритету</button>
-                            </div>
-                        </div>
+                            <ul class="dropdown-menu">
+                              <button type="button">По дедлайну</button>
+                              <button type="button">По автору</button>
+                              <button type="button">По приоритету</button>
+                            </ul>
+                          </div>
                     </div>
+                </div>
+                <div class="cabinet__bottom">
+                    <button type="button" class="cabinet__bottom-btn">Без резолюции<img src="img/cabinet-close.svg" alt=""></button>
+                    <button type="button" class="cabinet__bottom-btn">По проекту<img src="img/cabinet-close.svg" alt=""></button>
+                    <button type="buttob" class="cabinet__bottom-btn-delete"><img src="img/cabinet-korzina.svg" alt=""></button>
                 </div>
                 <div class="cabinet__list">
-                    <button type="button" class="cabinet__btn">Без резолюции <img src="img/cabinet-close.svg" alt=""> </button>
-                    <button type="button" class="cabinet__btn">По проекту <img src="img/cabinet-close.svg" alt=""> </button>
-                    <button type="button" class="cabinet__list-btn"><img src="img/cabinet-korzina.svg" alt=""></button>
+                    <button type="button" class="cabinet__list-btn active">В работе</button>
+                    <button type="button" class="cabinet__list-btn">Входящие предложения</button>
+                    <button type="button" class="cabinet__list-btn">Исходящие предложения</button>
+                    <button type="button" class="cabinet__list-btn">Архив</button>
+                    <button type="button" class="cabinet__list-btn">Диаграмма Ганта</button>
+                    <button type="button" class="cabinet__list-add"><img src="img/cabinet-add.svg" alt=""></button>
                 </div>
-                <nav class="cabinet__nav">
-                    <button type="button" class="cabinet__subtitle active">В работе</button>
-                    <button type="button" class="cabinet__subtitle">Входящие предложения</button>
-                    <button type="button" class="cabinet__subtitle">Исходящие предложения</button>
-                    <button type="button" class="cabinet__subtitle">Архив</button>
-                    <button type="button" class="cabinet__subtitle">Диаграмма Ганта</button>
-                    <button type="button" class="cabinet__add"><img src="img/cabinet-add.svg" alt=""></button>
-                </nav>
-                <div class="cabinet__content">
-                    <div class="cabinet__col">
-                        <div class="cabinet__col-top">
-                            <button type="button" class="cabinet__col-add"><img src="img/cabinet-plus.svg" alt=""></button>
-                            <button type="button" class="cabinet__col-btn">Ключ</button>
+                <div class="cabinet__item cabinet__item-first">
+                    <div class="cabinet__top-buttons">
+                        <button type="button" class="cabinet__top-add"><img src="img/cabinet-plus.svg" alt=""></button>
+                        <button type="button" class="cabinet__top-btn">Ключ</button>
+                    </div>
+                    <p class="cabinet__top-title cabinet__top-title-center cabinet__top-title_1">Статус</p>
+                    <p class="cabinet__top-title cabinet__top-title-center cabinet__top-title_2">Таймер</p>
+                    <p class="cabinet__top-title cabinet__top-title-center cabinet__top-title_3">Заказчик</p>
+                    <p class="cabinet__top-title cabinet__top-title-center cabinet__top-title_4">Оплата</p>
+                    <p class="cabinet__top-title cabinet__top-title-center cabinet__top-title_5">Вид экспертизы</p>
+                    <p class="cabinet__top-title cabinet__top-title-center cabinet__top-title_6">Раздел</p>
+                    <p class="cabinet__top-title cabinet__top-title-center cabinet__top-title_7">Обновлено</p>
+                </div>
+                <div class="cabinet__item">
+                    <div class="cabinet__content">
+                        <input type="checkbox" class="cabinet__item-input" checked>
+                        <button type="button">
+                            <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_158_1456)">
+                                <path d="M8.03029 0H1.96968C1.71865 0 1.51514 0.203515 1.51514 0.454545V9.54545C1.51514 9.72018 1.61529 9.87945 1.77277 9.95515C1.93026 10.0308 2.11717 10.0096 2.25362 9.90039L4.99998 7.70333L7.74635 9.90039C7.82853 9.96615 7.92899 10 8.03035 10C8.09726 10 8.16459 9.98524 8.2272 9.95515C8.38468 9.87948 8.48483 9.72021 8.48483 9.54545V0.454545C8.48483 0.203515 8.28132 0 8.03029 0ZM7.57574 8.5997L5.28392 6.76627C5.20092 6.69988 5.10044 6.66667 4.99998 6.66667C4.89953 6.66667 4.79905 6.69988 4.71605 6.76627L2.42423 8.5997V0.909091H7.57574V8.5997Z" fill="#010002"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_158_1456">
+                                <rect width="10" height="10" fill="white"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                        </button>
+                        <p class="cabinet__item-p">Веранда 23А/22-1-190122</p>
+                        <button type="button">
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 1.00355V2.4867V2.89119V10.9965H12V2.89119V2.4867V1.00355H0ZM7.46068 7.48571H4.53932V5.59295H7.46068V7.48571ZM8.26967 5.59295H11.191V7.48571H8.26967V5.59295ZM7.46068 8.2947V10.1875H4.53932V8.2947H7.46068ZM0.808989 5.59295H3.73033V7.48571H0.808989V5.59295ZM4.53932 4.78396V2.89119H7.46068V4.78396H4.53932ZM3.73033 2.89119V4.78396H0.808989V2.89119H3.73033ZM0.808989 8.2947H3.73033V10.1875H0.808989V8.2947ZM8.26967 10.1875V8.2947H11.191V10.1875H8.26967ZM11.191 4.78396H8.26967V2.89119H11.191V4.78396Z" fill="black"/>
+                            </svg>                            
+                        </button>
+                        <button type="button" class="cabinet__item-content">
+                            <svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M6.20687e-06 11L2.91005 10.3532C3.70679 10.7792 4.59655 11.0014 5.5 11C8.53765 11 11 8.53765 11 5.5C11 2.46235 8.53765 0 5.5 0C2.46236 0 6.20687e-06 2.46235 6.20687e-06 5.5C-0.00135394 6.40345 0.220849 7.29321 0.646806 8.08995L6.20687e-06 11ZM3.4287 9.38355L3.06955 9.19105L1.44871 9.55129L1.80896 7.93045L1.61701 7.5713C1.27876 6.9399 1.10001 6.2337 1.10001 5.5C1.10001 4.62976 1.35806 3.77906 1.84154 3.05549C2.32502 2.33191 3.0122 1.76795 3.8162 1.43493C4.62019 1.1019 5.50488 1.01477 6.3584 1.18454C7.21192 1.35432 7.99592 1.77338 8.61127 2.38873C9.22662 3.00408 9.64568 3.78808 9.81546 4.6416C9.98523 5.49512 9.8981 6.37981 9.56507 7.1838C9.23205 7.9878 8.66809 8.67498 7.94451 9.15846C7.22093 9.64194 6.37024 9.89999 5.5 9.89999C4.77752 9.9015 4.06591 9.72407 3.4287 9.38355Z" fill="black"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="cabinet__content">
+                        <button type="button" class="cabinet__item-btn">ЛОК</button>
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                              <img src="img/cabinet-status-down.svg" alt="">
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+                              <li><a class="dropdown-item" href="#">Актив</a></li>
+                              <li><a class="dropdown-item" href="#">Пассив</a></li>
+                            </ul>
                         </div>
-                        <div class="cabinet__checkbox">
-                            <input type="checkbox" id="checkbox1" name="checkbox">
-                            <label for="checkbox1">
-                                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg" class="checkbox-icon-1">
-                                    <g clip-path="url(#clip0_158_1456)">
-                                    <path d="M8.03029 0H1.96968C1.71865 0 1.51514 0.203515 1.51514 0.454545V9.54545C1.51514 9.72018 1.61529 9.87945 1.77277 9.95515C1.93026 10.0308 2.11717 10.0096 2.25362 9.90039L4.99998 7.70333L7.74635 9.90039C7.82853 9.96615 7.92899 10 8.03035 10C8.09726 10 8.16459 9.98524 8.2272 9.95515C8.38468 9.87948 8.48483 9.72021 8.48483 9.54545V0.454545C8.48483 0.203515 8.28132 0 8.03029 0ZM7.57574 8.5997L5.28392 6.76627C5.20092 6.69988 5.10044 6.66667 4.99998 6.66667C4.89953 6.66667 4.79905 6.69988 4.71605 6.76627L2.42423 8.5997V0.909091H7.57574V8.5997Z" fill="#010002"/>
-                                    </g>
-                                    <defs>
-                                    <clipPath id="clip0_158_1456">
-                                    <rect width="10" height="10" fill="white"/>
-                                    </clipPath>
-                                    </defs>
-                                </svg>
-                                Веранда 23А/22-1-190122
-                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" class="checkbox-icon-2">
-                                    <path d="M0 1.00355V2.4867V2.89119V10.9965H12V2.89119V2.4867V1.00355H0ZM7.46068 7.48571H4.53932V5.59295H7.46068V7.48571ZM8.26967 5.59295H11.191V7.48571H8.26967V5.59295ZM7.46068 8.2947V10.1875H4.53932V8.2947H7.46068ZM0.808989 5.59295H3.73033V7.48571H0.808989V5.59295ZM4.53932 4.78396V2.89119H7.46068V4.78396H4.53932ZM3.73033 2.89119V4.78396H0.808989V2.89119H3.73033ZM0.808989 8.2947H3.73033V10.1875H0.808989V8.2947ZM8.26967 10.1875V8.2947H11.191V10.1875H8.26967ZM11.191 4.78396H8.26967V2.89119H11.191V4.78396Z" fill="black"/>
-                                </svg>    
-                                <svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg" class="checkbox-icon-3">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6.20687e-06 11L2.91005 10.3532C3.70679 10.7792 4.59655 11.0014 5.5 11C8.53765 11 11 8.53765 11 5.5C11 2.46235 8.53765 0 5.5 0C2.46236 0 6.20687e-06 2.46235 6.20687e-06 5.5C-0.00135394 6.40345 0.220849 7.29321 0.646806 8.08995L6.20687e-06 11ZM3.4287 9.38355L3.06955 9.19105L1.44871 9.55129L1.80896 7.93045L1.61701 7.5713C1.27876 6.9399 1.10001 6.2337 1.10001 5.5C1.10001 4.62976 1.35806 3.77906 1.84154 3.05549C2.32502 2.33191 3.0122 1.76795 3.8162 1.43493C4.62019 1.1019 5.50488 1.01477 6.3584 1.18454C7.21192 1.35432 7.99592 1.77338 8.61127 2.38873C9.22662 3.00408 9.64568 3.78808 9.81546 4.6416C9.98523 5.49512 9.8981 6.37981 9.56507 7.1838C9.23205 7.9878 8.66809 8.67498 7.94451 9.15846C7.22093 9.64194 6.37024 9.89999 5.5 9.89999C4.77752 9.9015 4.06591 9.72407 3.4287 9.38355Z" fill="black"/>
-                                </svg>                                                                    
-                            </label>
-                        </div>
-                        <div class="cabinet__checkbox">
-                            <input type="checkbox" id="checkbox2" name="checkbox" checked>
-                            <label for="checkbox2">
-                                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg" class="checkbox-icon-1">
-                                    <g clip-path="url(#clip0_158_1456)">
-                                    <path d="M8.03029 0H1.96968C1.71865 0 1.51514 0.203515 1.51514 0.454545V9.54545C1.51514 9.72018 1.61529 9.87945 1.77277 9.95515C1.93026 10.0308 2.11717 10.0096 2.25362 9.90039L4.99998 7.70333L7.74635 9.90039C7.82853 9.96615 7.92899 10 8.03035 10C8.09726 10 8.16459 9.98524 8.2272 9.95515C8.38468 9.87948 8.48483 9.72021 8.48483 9.54545V0.454545C8.48483 0.203515 8.28132 0 8.03029 0ZM7.57574 8.5997L5.28392 6.76627C5.20092 6.69988 5.10044 6.66667 4.99998 6.66667C4.89953 6.66667 4.79905 6.69988 4.71605 6.76627L2.42423 8.5997V0.909091H7.57574V8.5997Z" fill="#010002"/>
-                                    </g>
-                                    <defs>
-                                    <clipPath id="clip0_158_1456">
-                                    <rect width="10" height="10" fill="white"/>
-                                    </clipPath>
-                                    </defs>
-                                </svg>
-                                Крыльцо 23А/22-1-190122
-                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" class="checkbox-icon-2">
-                                    <path d="M0 1.00355V2.4867V2.89119V10.9965H12V2.89119V2.4867V1.00355H0ZM7.46068 7.48571H4.53932V5.59295H7.46068V7.48571ZM8.26967 5.59295H11.191V7.48571H8.26967V5.59295ZM7.46068 8.2947V10.1875H4.53932V8.2947H7.46068ZM0.808989 5.59295H3.73033V7.48571H0.808989V5.59295ZM4.53932 4.78396V2.89119H7.46068V4.78396H4.53932ZM3.73033 2.89119V4.78396H0.808989V2.89119H3.73033ZM0.808989 8.2947H3.73033V10.1875H0.808989V8.2947ZM8.26967 10.1875V8.2947H11.191V10.1875H8.26967ZM11.191 4.78396H8.26967V2.89119H11.191V4.78396Z" fill="black"/>
-                                </svg>    
-                                <svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg" class="checkbox-icon-3">
-                                    <g clip-path="url(#clip0_407_558)">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6.20687e-06 11L2.91005 10.3532C3.70679 10.7792 4.59655 11.0014 5.5 11C8.53765 11 11 8.53765 11 5.5C11 2.46235 8.53765 0 5.5 0C2.46236 0 6.20687e-06 2.46235 6.20687e-06 5.5C-0.00135394 6.40345 0.220849 7.29321 0.646806 8.08995L6.20687e-06 11ZM3.4287 9.38355L3.06955 9.19105L1.44871 9.55129L1.80896 7.93045L1.61701 7.5713C1.27876 6.9399 1.10001 6.2337 1.10001 5.5C1.10001 4.62976 1.35806 3.77906 1.84154 3.05549C2.32502 2.33191 3.0122 1.76795 3.8162 1.43493C4.62019 1.1019 5.50488 1.01477 6.3584 1.18454C7.21192 1.35432 7.99592 1.77338 8.61127 2.38873C9.22662 3.00408 9.64568 3.78808 9.81546 4.6416C9.98523 5.49512 9.8981 6.37981 9.56507 7.1838C9.23205 7.9878 8.66809 8.67498 7.94451 9.15846C7.22093 9.64194 6.37024 9.89999 5.5 9.89999C4.77752 9.9015 4.06591 9.72407 3.4287 9.38355Z" fill="black"/>
-                                    <circle cx="10.2141" cy="3.92857" r="2.35714" fill="#FF0716"/>
-                                    </g>
-                                    <defs>
-                                    <clipPath id="clip0_407_558">
-                                    <rect width="12.5714" height="11" fill="white"/>
-                                    </clipPath>
-                                    </defs>
-                                </svg>                                                                                                  
-                            </label>
+                        <button type="button">
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_158_1452)">
+                                <path d="M12.0802 2.18544C12.0644 2.16879 12.0477 2.15337 12.0305 2.13857C9.27507 -0.712165 4.7246 -0.713587 1.96787 2.13868C1.95072 2.15345 1.93402 2.16887 1.91829 2.18547C-0.606179 4.84885 -0.671175 9.08255 1.91829 11.8145C1.93467 11.8318 1.9519 11.848 1.96978 11.8633C4.72476 14.7115 9.27226 14.713 12.0287 11.8633C12.0465 11.848 12.0638 11.8318 12.0801 11.8145C14.6222 9.13253 14.6573 4.90441 12.0802 2.18544ZM2.33375 10.1969C1.00185 8.25923 1.01809 5.71704 2.33375 3.80301C3.37273 5.75655 3.41107 8.17129 2.33375 10.1969ZM10.7244 11.2547C8.5914 13.1245 5.41054 13.1275 3.2741 11.2547C4.86586 8.65429 4.87119 5.3544 3.2741 2.7453C5.40701 0.875543 8.58787 0.872426 10.7244 2.7453C9.13258 5.34576 9.12728 8.64559 10.7244 11.2547ZM11.6647 10.1969C10.6286 8.24873 10.5847 5.83363 11.6647 3.80301C12.9859 5.72524 12.9916 8.26639 11.6647 10.1969Z" fill="#1F1F1F"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_158_1452">
+                                <rect width="14" height="14" fill="white"/>
+                                </clipPath>
+                                </defs>
+                            </svg>                            
+                        </button>
+                    </div>
+                    <div class="cabinet__content">
+                        <div class="cabinet__progress">
+                            <div class="cabinet-progress">
+                                <div class="cabinet-progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <p class="cabinet__progress-p">Осталось 24 часа</p>
                         </div>
                     </div>
-                    <div class="cabinet__col">
-                        <p class="cabinet__title cabinet__title-center">Статус</p>
-                        <div class="cabinet__status">
-                            <button type="button" class="cabinet__status-btn">ЛОК</button>
-                            <div class="cabinet__dropdown">
-                                <button type="button" class="dropdown__button"><img src="img/cabinet-status-down.svg" alt=""></button>
-                                <div class="dropdown__content">
-                                    <button type="button" class="dropdown__btn">Актив</button>
-                                    <button type="button" class="dropdown__btn">Пассив</button>
-                                </div>
-                            </div>
-                            <div class="cabinet__img">
-                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <g clip-path="url(#clip0_158_1452)">
-                                    <path d="M12.0802 2.18544C12.0644 2.16879 12.0477 2.15337 12.0305 2.13857C9.27507 -0.712165 4.7246 -0.713587 1.96787 2.13868C1.95072 2.15345 1.93402 2.16887 1.91829 2.18547C-0.606179 4.84885 -0.671175 9.08255 1.91829 11.8145C1.93467 11.8318 1.9519 11.848 1.96978 11.8633C4.72476 14.7115 9.27226 14.713 12.0287 11.8633C12.0465 11.848 12.0638 11.8318 12.0801 11.8145C14.6222 9.13253 14.6573 4.90441 12.0802 2.18544ZM2.33375 10.1969C1.00185 8.25923 1.01809 5.71704 2.33375 3.80301C3.37273 5.75655 3.41107 8.17129 2.33375 10.1969ZM10.7244 11.2547C8.5914 13.1245 5.41054 13.1275 3.2741 11.2547C4.86586 8.65429 4.87119 5.3544 3.2741 2.7453C5.40701 0.875543 8.58787 0.872426 10.7244 2.7453C9.13258 5.34576 9.12728 8.64559 10.7244 11.2547ZM11.6647 10.1969C10.6286 8.24873 10.5847 5.83363 11.6647 3.80301C12.9859 5.72524 12.9916 8.26639 11.6647 10.1969Z" fill="#1F1F1F"/>
-                                    </g>
-                                    <defs>
-                                    <clipPath id="clip0_158_1452">
-                                    <rect width="14" height="14" fill="white"/>
-                                    </clipPath>
-                                    </defs>
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="cabinet__status">
-                            <button type="button" class="cabinet__status-btn">ЛОК</button>
-                            <div class="cabinet__dropdown">
-                                <button type="button" class="dropdown__button"><img src="img/cabinet-status-down.svg" alt=""></button>
-                                <div class="dropdown__content">
-                                    <button type="button" class="dropdown__btn">Актив</button>
-                                    <button type="button" class="dropdown__btn">Пассив</button>
-                                </div>
-                            </div>
-                            <div class="cabinet__img">
-                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <g clip-path="url(#clip0_158_1452)">
-                                    <path d="M12.0802 2.18544C12.0644 2.16879 12.0477 2.15337 12.0305 2.13857C9.27507 -0.712165 4.7246 -0.713587 1.96787 2.13868C1.95072 2.15345 1.93402 2.16887 1.91829 2.18547C-0.606179 4.84885 -0.671175 9.08255 1.91829 11.8145C1.93467 11.8318 1.9519 11.848 1.96978 11.8633C4.72476 14.7115 9.27226 14.713 12.0287 11.8633C12.0465 11.848 12.0638 11.8318 12.0801 11.8145C14.6222 9.13253 14.6573 4.90441 12.0802 2.18544ZM2.33375 10.1969C1.00185 8.25923 1.01809 5.71704 2.33375 3.80301C3.37273 5.75655 3.41107 8.17129 2.33375 10.1969ZM10.7244 11.2547C8.5914 13.1245 5.41054 13.1275 3.2741 11.2547C4.86586 8.65429 4.87119 5.3544 3.2741 2.7453C5.40701 0.875543 8.58787 0.872426 10.7244 2.7453C9.13258 5.34576 9.12728 8.64559 10.7244 11.2547ZM11.6647 10.1969C10.6286 8.24873 10.5847 5.83363 11.6647 3.80301C12.9859 5.72524 12.9916 8.26639 11.6647 10.1969Z" fill="#1F1F1F"/>
-                                    </g>
-                                    <defs>
-                                    <clipPath id="clip0_158_1452">
-                                    <rect width="14" height="14" fill="white"/>
-                                    </clipPath>
-                                    </defs>
-                                </svg>
-                            </div>
-                        </div>
-                        <button type="button" class="cabinet__copy"><img src="img/cabinet-copy.svg" alt=""></button>
+                    <p class="cabinet__p">ООО “Транснефть”</p>
+                    <div class="cabinet__texts">
+                        <p class="cabinet__p">15000</p>
+                        <p class="cabinet__txt">оплачено 7500 (50%)</p>
                     </div>
-                    <div class="cabinet__col">
-                        <p class="cabinet__title">Таймер</p>
-                        <div class="cabinet__timers">
-                            <div class="cabinet__timer">
-                                <div class="cabinet__progress">
-                                    <span class="cabinet__track"></span>
-                                </div>
-                                <p class="cabinet__p">Осталось 24 часа</p>
-                            </div>
-                            <div class="cabinet__timer">
-                                <div class="cabinet__progress">
-                                    <span class="cabinet__track cabinet__track-sm"></span>
-                                </div>
-                                <p class="cabinet__p">Осталось 3 часа</p>
-                            </div>
-                        </div>
+                    <p class="cabinet__p">Количественный</p>
+                    <p class="cabinet__p cabinet__p_margin">ИГЛИ</p>
+                    <p class="cabinet__p">15.04.2022</p>
+                </div>
+                <div class="cabinet__item">
+                    <div class="cabinet__content">
+                        <input type="checkbox" class="cabinet__item-input" checked>
+                        <button type="button">
+                            <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_158_1456)">
+                                <path d="M8.03029 0H1.96968C1.71865 0 1.51514 0.203515 1.51514 0.454545V9.54545C1.51514 9.72018 1.61529 9.87945 1.77277 9.95515C1.93026 10.0308 2.11717 10.0096 2.25362 9.90039L4.99998 7.70333L7.74635 9.90039C7.82853 9.96615 7.92899 10 8.03035 10C8.09726 10 8.16459 9.98524 8.2272 9.95515C8.38468 9.87948 8.48483 9.72021 8.48483 9.54545V0.454545C8.48483 0.203515 8.28132 0 8.03029 0ZM7.57574 8.5997L5.28392 6.76627C5.20092 6.69988 5.10044 6.66667 4.99998 6.66667C4.89953 6.66667 4.79905 6.69988 4.71605 6.76627L2.42423 8.5997V0.909091H7.57574V8.5997Z" fill="#010002"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_158_1456">
+                                <rect width="10" height="10" fill="white"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                        </button>
+                        <p class="cabinet__item-p">Веранда 23А/22-1-190122</p>
+                        <button type="button">
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 1.00355V2.4867V2.89119V10.9965H12V2.89119V2.4867V1.00355H0ZM7.46068 7.48571H4.53932V5.59295H7.46068V7.48571ZM8.26967 5.59295H11.191V7.48571H8.26967V5.59295ZM7.46068 8.2947V10.1875H4.53932V8.2947H7.46068ZM0.808989 5.59295H3.73033V7.48571H0.808989V5.59295ZM4.53932 4.78396V2.89119H7.46068V4.78396H4.53932ZM3.73033 2.89119V4.78396H0.808989V2.89119H3.73033ZM0.808989 8.2947H3.73033V10.1875H0.808989V8.2947ZM8.26967 10.1875V8.2947H11.191V10.1875H8.26967ZM11.191 4.78396H8.26967V2.89119H11.191V4.78396Z" fill="black"/>
+                            </svg>                            
+                        </button>
+                        <button type="button" class="cabinet__item-content active">
+                            <svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_407_558)">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M6.20687e-06 11L2.91005 10.3532C3.70679 10.7792 4.59655 11.0014 5.5 11C8.53765 11 11 8.53765 11 5.5C11 2.46235 8.53765 0 5.5 0C2.46236 0 6.20687e-06 2.46235 6.20687e-06 5.5C-0.00135394 6.40345 0.220849 7.29321 0.646806 8.08995L6.20687e-06 11ZM3.4287 9.38355L3.06955 9.19105L1.44871 9.55129L1.80896 7.93045L1.61701 7.5713C1.27876 6.9399 1.10001 6.2337 1.10001 5.5C1.10001 4.62976 1.35806 3.77906 1.84154 3.05549C2.32502 2.33191 3.0122 1.76795 3.8162 1.43493C4.62019 1.1019 5.50488 1.01477 6.3584 1.18454C7.21192 1.35432 7.99592 1.77338 8.61127 2.38873C9.22662 3.00408 9.64568 3.78808 9.81546 4.6416C9.98523 5.49512 9.8981 6.37981 9.56507 7.1838C9.23205 7.9878 8.66809 8.67498 7.94451 9.15846C7.22093 9.64194 6.37024 9.89999 5.5 9.89999C4.77752 9.9015 4.06591 9.72407 3.4287 9.38355Z" fill="black"/>
+                                <circle cx="10.2141" cy="3.92857" r="2.35714" fill="#FF0716"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_407_558">
+                                <rect width="12.5714" height="11" fill="white"/>
+                                </clipPath>
+                                </defs>
+                            </svg>                                
+                        </button>
                     </div>
-                    <div class="cabinet__col">
-                        <p class="cabinet__title">Заказчик</p>
-                        <div class="cabinet__texts">
-                            <p class="cabinet__text">ООО “ГазПромБанк”</p>
-                            <p class="cabinet__text">ООО “Транснефть”</p>
+                    <div class="cabinet__content">
+                        <button type="button" class="cabinet__item-btn">ЛОК</button>
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                              <img src="img/cabinet-status-down.svg" alt="">
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+                              <li><a class="dropdown-item" href="#">Актив</a></li>
+                              <li><a class="dropdown-item" href="#">Пассив</a></li>
+                            </ul>
                         </div>
+                        <button type="button">
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_158_1452)">
+                                <path d="M12.0802 2.18544C12.0644 2.16879 12.0477 2.15337 12.0305 2.13857C9.27507 -0.712165 4.7246 -0.713587 1.96787 2.13868C1.95072 2.15345 1.93402 2.16887 1.91829 2.18547C-0.606179 4.84885 -0.671175 9.08255 1.91829 11.8145C1.93467 11.8318 1.9519 11.848 1.96978 11.8633C4.72476 14.7115 9.27226 14.713 12.0287 11.8633C12.0465 11.848 12.0638 11.8318 12.0801 11.8145C14.6222 9.13253 14.6573 4.90441 12.0802 2.18544ZM2.33375 10.1969C1.00185 8.25923 1.01809 5.71704 2.33375 3.80301C3.37273 5.75655 3.41107 8.17129 2.33375 10.1969ZM10.7244 11.2547C8.5914 13.1245 5.41054 13.1275 3.2741 11.2547C4.86586 8.65429 4.87119 5.3544 3.2741 2.7453C5.40701 0.875543 8.58787 0.872426 10.7244 2.7453C9.13258 5.34576 9.12728 8.64559 10.7244 11.2547ZM11.6647 10.1969C10.6286 8.24873 10.5847 5.83363 11.6647 3.80301C12.9859 5.72524 12.9916 8.26639 11.6647 10.1969Z" fill="#1F1F1F"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_158_1452">
+                                <rect width="14" height="14" fill="white"/>
+                                </clipPath>
+                                </defs>
+                            </svg>                            
+                        </button>
                     </div>
-                    <div class="cabinet__col">
-                        <p class="cabinet__title">Оплата</p>
-                        <div class="cabinet__payments">
-                            <div class="cabinet__payment">
-                                <p class="cabinet__payment-title">5000</p>
-                                <p class="cabinet__payment-p">оплачено 2500 (50%)</p>
+                    <div class="cabinet__content">
+                        <div class="cabinet__progress">
+                            <div class="cabinet-progress">
+                                <div class="cabinet-progress-bar cabinet-progress-bar-2" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
-                            <div class="cabinet__payment">
-                                <p class="cabinet__payment-title">15000</p>
-                                <p class="cabinet__payment-p">оплачено 7500 (50%)</p>
-                            </div>
+                            <p class="cabinet__progress-p">Осталось 3 часа</p>
                         </div>
                     </div>
-                    <div class="cabinet__col">
-                        <p class="cabinet__title">Вид экспертизы</p>
-                        <div class="cabinet__texts">
-                            <p class="cabinet__text">Качественный</p>
-                            <p class="cabinet__text">Количественный</p>
-                        </div>
+                    <p class="cabinet__p">ООО “Транснефть”</p>
+                    <div class="cabinet__texts">
+                        <p class="cabinet__p">15000</p>
+                        <p class="cabinet__txt">оплачено 7500 (50%)</p>
                     </div>
-                    <div class="cabinet__col">
-                        <p class="cabinet__title">Раздел</p>
-                        <div class="cabinet__texts">
-                            <p class="cabinet__text">ИГЛИ</p>
-                            <p class="cabinet__text">ИГЛИ</p>
-                        </div>
-                    </div>
-                    <div class="cabinet__col">
-                        <p class="cabinet__title">Обновлено</p>
-                        <div class="cabinet__texts">
-                            <p class="cabinet__text">14.04.2022</p>
-                            <p class="cabinet__text">15.04.2022</p>
-                        </div>
-                    </div>
+                    <p class="cabinet__p">Количественный</p>
+                    <p class="cabinet__p cabinet__p_margin">ИГЛИ</p>
+                    <p class="cabinet__p">15.04.2022</p>
+                </div>
+                <div class="cabinet__copy">
+                    <button type="button"><img src="img/cabinet-copy.svg" alt=""></button>
                 </div>
             </div>
         </section>
-        <div class="dropdownClose"></div>
     </main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     <script src="js/app.js"></script>
 </body>
 </html>
